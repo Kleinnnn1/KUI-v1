@@ -1,20 +1,48 @@
-import { Button } from "@/kui/Button";
-import { Badge } from "@/kui/Badge";
+import { Input } from "@/kui/Input";
+import { Search, Eye } from "lucide-react";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-black flex flex-col items-center justify-center gap-4">
-      <Button variant="solid">Solid</Button>
-      <Button variant="ghost">Ghost</Button>
-      <Button variant="danger">Danger</Button>
-      <Button variant="muted">Muted</Button>
+    <main className="min-h-screen bg-black flex flex-col items-center justify-center gap-6 p-10">
+      <Input placeholder="Default input" className="w-80" />
 
-      <Badge variant="default">Default</Badge>
-      <Badge variant="solid">Solid</Badge>
-      <Badge variant="success">Success</Badge>
-      <Badge variant="warning">Warning</Badge>
-      <Badge variant="danger">Danger</Badge>
-      <Badge variant="muted">Muted</Badge>
+      <Input
+        label="Email"
+        hint="We'll never share your email."
+        placeholder="you@example.com"
+        className="w-80"
+      />
+
+      <Input
+        label="Search"
+        placeholder="Search components..."
+        leftIcon={<Search size={14} />}
+        className="w-80"
+      />
+
+      <Input
+        label="Password"
+        type="password"
+        placeholder="Enter password"
+        rightIcon={<Eye size={14} />}
+        className="w-80"
+      />
+
+      <Input
+        label="Username"
+        placeholder="Enter username"
+        error="Username is already taken."
+        className="w-80"
+      />
+
+      <Input
+        variant="success"
+        label="Email"
+        placeholder="you@example.com"
+        className="w-80"
+      />
+
+      <Input placeholder="Disabled input" disabled className="w-80" />
     </main>
   );
 }

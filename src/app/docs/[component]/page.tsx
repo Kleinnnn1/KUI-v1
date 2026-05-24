@@ -1,0 +1,51 @@
+import { notFound } from "next/navigation";
+import { registry } from "@/app/lib/registry";
+import { Preview } from "@/components/Preview";
+import { CodeBlock } from "@/components/CodeBlock";
+
+const installCode = `npm install class-variance-authority clsx tailwind-merge`;
+
+export default async function ComponentPage({
+  params,
+}: {
+  params: Promise<{ component: string }>;
+}) {
+  const { component } = await params;
+  const entry = registry[component];
+
+  if (!entry) return notFound();
+
+  return (
+    <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-2 border-b border-white/10 pb-8">
+        <h1 className="text-white text-3xl font-semibold tracking-wide">
+          {entry.name}
+        </h1>
+        <p className="text-gray-500 text-sm leading-relaxed">
+          {entry.description}
+        </p>
+      </div>
+
+      <div className="flex flex-col gap-3">
+        <h2 className="text-white text-sm tracking-widest uppercase font-medium">
+          Preview
+        </h2>
+        <Preview>{entry.preview}</Preview>
+      </div>
+
+      <div className="flex flex-col gap-3">
+        <h2 className="text-white text-sm tracking-widest uppercase font-medium">
+          Installation
+        </h2>
+        <CodeBlock code={installCode} language="bash" />
+      </div>
+
+      <div className="flex flex-col gap-3">
+        <h2 className="text-white text-sm tracking-widest uppercase font-medium">
+          Usage
+        </h2>
+        <CodeBlock code={entry.code} language="tsx" />
+      </div>
+    </div>
+  );
+}
