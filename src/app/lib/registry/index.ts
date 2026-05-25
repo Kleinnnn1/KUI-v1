@@ -4,6 +4,7 @@ import { cardRegistry } from "./card.registry";
 import { inputRegistry } from "./input.registry";
 import { toastRegistry } from "./toast.registry";
 import { modalRegistry } from "./modal.registry";
+import { avatarRegistry } from "./avatar.registry";
 import type { ComponentEntry } from "./types";
 
 export const registry: Record<string, ComponentEntry> = {
@@ -13,6 +14,7 @@ export const registry: Record<string, ComponentEntry> = {
   input: inputRegistry,
   toast: toastRegistry,
   modal: modalRegistry,
+  avatar: avatarRegistry,
 };
 
 export type { ComponentEntry };

@@ -13,6 +13,7 @@ const components = [
   { name: "Input", slug: "input" },
   { name: "Toast", slug: "toast" },
   { name: "Modal", slug: "modal" },
+  { name: "Avatar", slug: "avatar" },
 ];
 
 export const Sidebar = () => {
