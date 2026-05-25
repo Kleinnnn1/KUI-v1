@@ -29,7 +29,7 @@ export const AvatarPreview = () => {
             className="bg-indigo-500/20 border-indigo-500/40 text-indigo-300"
           />
 
-          <Avatar src="/broken.jpg" fallback="SK" size="lg" />
+          <Avatar fallback="SK" size="lg" />
 
           <Avatar size="lg" />
         </div>

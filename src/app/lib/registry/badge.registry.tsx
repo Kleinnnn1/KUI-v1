@@ -2,6 +2,31 @@ import { Badge } from "@/kui/Badge";
 import type { ComponentEntry } from "./types";
 
 export const badgeRegistry: ComponentEntry = {
+  props: [
+    {
+      prop: "variant",
+      type: "default | solid | success | warning | danger | muted",
+      default: "default",
+      description: "Controls the visual style of the badge.",
+    },
+    {
+      prop: "size",
+      type: "sm | md | lg",
+      default: "md",
+      description: "Controls the size of the badge.",
+    },
+    {
+      prop: "className",
+      type: "string",
+      description: "Additional CSS classes to apply.",
+    },
+    {
+      prop: "children",
+      type: "ReactNode",
+      required: true,
+      description: "Content rendered inside the badge.",
+    },
+  ],
   name: "Badge",
   description: "A small label component for status, tags, and categories.",
   preview: (

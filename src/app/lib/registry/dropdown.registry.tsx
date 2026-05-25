@@ -2,6 +2,36 @@ import { DropdownPreview } from "./previews/DropdownPreview";
 import type { ComponentEntry } from "./types";
 
 export const dropdownRegistry: ComponentEntry = {
+  props: [
+    {
+      prop: "align",
+      type: "start | center | end",
+      default: "start",
+      description: "Controls the horizontal alignment of the dropdown menu.",
+    },
+    {
+      prop: "side",
+      type: "top | bottom",
+      default: "bottom",
+      description: "Controls which side the dropdown opens from.",
+    },
+    {
+      prop: "variant (item)",
+      type: "default | danger | disabled",
+      default: "default",
+      description: "Controls the visual style of a dropdown item.",
+    },
+    {
+      prop: "icon",
+      type: "ReactNode",
+      description: "Icon displayed on the left of a dropdown item.",
+    },
+    {
+      prop: "onClick",
+      type: "() => void",
+      description: "Callback fired when a dropdown item is clicked.",
+    },
+  ],
   name: "Dropdown",
   description:
     "A dropdown menu component with trigger, items, labels, separators, and keyboard support.",

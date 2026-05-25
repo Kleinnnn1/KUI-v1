@@ -2,6 +2,34 @@ import { ToastPreview } from "./previews/ToastPreview"; // ← import instead
 import type { ComponentEntry } from "./types";
 
 export const toastRegistry: ComponentEntry = {
+  props: [
+    {
+      prop: "toast.success()",
+      type: "(message: string, duration?: number) => void",
+      description: "Triggers a success toast notification.",
+    },
+    {
+      prop: "toast.error()",
+      type: "(message: string, duration?: number) => void",
+      description: "Triggers an error toast notification.",
+    },
+    {
+      prop: "toast.warning()",
+      type: "(message: string, duration?: number) => void",
+      description: "Triggers a warning toast notification.",
+    },
+    {
+      prop: "toast.info()",
+      type: "(message: string, duration?: number) => void",
+      description: "Triggers an info toast notification.",
+    },
+    {
+      prop: "duration",
+      type: "number",
+      default: "3000",
+      description: "Duration in milliseconds before the toast disappears.",
+    },
+  ],
   name: "Toast",
   description:
     "A toast notification system with context, portal rendering, and multiple variants.",

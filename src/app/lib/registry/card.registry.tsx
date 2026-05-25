@@ -10,6 +10,42 @@ import {
 import type { ComponentEntry } from "./types";
 
 export const cardRegistry: ComponentEntry = {
+  props: [
+    {
+      prop: "variant",
+      type: "default | elevated | outline | ghost",
+      default: "default",
+      description: "Controls the visual style of the card.",
+    },
+    {
+      prop: "padding",
+      type: "none | sm | md | lg",
+      default: "md",
+      description: "Controls the inner padding of the card.",
+    },
+    {
+      prop: "hoverable",
+      type: "boolean",
+      default: "false",
+      description: "Adds hover border and shadow effect.",
+    },
+    {
+      prop: "onClick",
+      type: "() => void",
+      description: "Callback fired when the card is clicked.",
+    },
+    {
+      prop: "className",
+      type: "string",
+      description: "Additional CSS classes to apply.",
+    },
+    {
+      prop: "children",
+      type: "ReactNode",
+      required: true,
+      description: "Content rendered inside the card.",
+    },
+  ],
   name: "Card",
   description:
     "A container component with header, content, and footer sub-components.",

@@ -2,6 +2,39 @@ import { AvatarPreview } from "./previews/AvatarPreview";
 import type { ComponentEntry } from "./types";
 
 export const avatarRegistry: ComponentEntry = {
+  props: [
+    {
+      prop: "src",
+      type: "string",
+      description: "Image URL for the avatar.",
+    },
+    {
+      prop: "alt",
+      type: "string",
+      description: "Alt text for the avatar image.",
+    },
+    {
+      prop: "fallback",
+      type: "string",
+      description: "Initials shown when image is missing or fails to load.",
+    },
+    {
+      prop: "size",
+      type: "xs | sm | md | lg | xl",
+      default: "md",
+      description: "Controls the size of the avatar.",
+    },
+    {
+      prop: "status",
+      type: "online | offline | busy | away",
+      description: "Shows a status indicator dot on the avatar.",
+    },
+    {
+      prop: "className",
+      type: "string",
+      description: "Additional CSS classes to apply.",
+    },
+  ],
   name: "Avatar",
   description:
     "A user avatar component with image, fallback initials, icon, status dot, and group support.",

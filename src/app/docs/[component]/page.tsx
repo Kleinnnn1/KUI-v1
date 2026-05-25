@@ -1,7 +1,9 @@
+// src/app/docs/[component]/page.tsx
 import { notFound } from "next/navigation";
 import { registry } from "@/app/lib/registry";
 import { Preview } from "@/components/Preview";
 import { CodeBlock } from "@/components/CodeBlock";
+import { PropsTable } from "@/components/PropsTable";
 import type { Metadata } from "next";
 
 const installCode = `npm install class-variance-authority clsx tailwind-merge`;
@@ -13,12 +15,8 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { component } = await params;
   const entry = registry[component];
-
   if (!entry) return { title: "Not Found" };
-
-  return {
-    title: entry.name,
-  };
+  return { title: entry.name };
 }
 
 export default async function ComponentPage({
@@ -33,16 +31,23 @@ export default async function ComponentPage({
 
   return (
     <div className="flex flex-col gap-10 relative z-0">
-      {" "}
+      <div className="flex flex-col gap-2 border-b border-white/10 pb-8">
+        <h1 className="text-white text-3xl font-semibold tracking-wide">
+          {entry.name}
+        </h1>
+        <p className="text-gray-500 text-sm leading-relaxed">
+          {entry.description}
+        </p>
+      </div>
+
       <div className="flex flex-col gap-3 relative z-10">
-        {" "}
         <h2 className="text-white text-sm tracking-widest font-medium">
           PREVIEW
         </h2>
         <Preview>{entry.preview}</Preview>
       </div>
+
       <div className="flex flex-col gap-3 relative z-0">
-        {" "}
         <h2 className="text-white text-sm tracking-widest font-medium">
           INSTALLATION
         </h2>
@@ -50,12 +55,20 @@ export default async function ComponentPage({
       </div>
 
       <div className="flex flex-col gap-3 relative z-0">
-        {" "}
         <h2 className="text-white text-sm tracking-widest font-medium">
           USAGE
         </h2>
         <CodeBlock code={entry.code} language="tsx" />
       </div>
+
+      {entry.props.length > 0 && (
+        <div className="flex flex-col gap-3 relative z-0">
+          <h2 className="text-white text-sm tracking-widest font-medium">
+            PROPS
+          </h2>
+          <PropsTable props={entry.props} />
+        </div>
+      )}
     </div>
   );
 }

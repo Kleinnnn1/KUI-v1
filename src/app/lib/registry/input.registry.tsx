@@ -3,6 +3,51 @@ import { Search } from "lucide-react";
 import type { ComponentEntry } from "./types";
 
 export const inputRegistry: ComponentEntry = {
+  props: [
+    {
+      prop: "variant",
+      type: "default | success | error",
+      default: "default",
+      description: "Controls the visual state of the input.",
+    },
+    {
+      prop: "size",
+      type: "sm | md | lg",
+      default: "md",
+      description: "Controls the size of the input.",
+    },
+    {
+      prop: "label",
+      type: "string",
+      description: "Label text displayed above the input.",
+    },
+    {
+      prop: "hint",
+      type: "string",
+      description: "Helper text displayed below the input.",
+    },
+    {
+      prop: "error",
+      type: "string",
+      description: "Error message — overrides hint and sets error variant.",
+    },
+    {
+      prop: "leftIcon",
+      type: "ReactNode",
+      description: "Icon displayed on the left side of the input.",
+    },
+    {
+      prop: "rightIcon",
+      type: "ReactNode",
+      description: "Icon displayed on the right side of the input.",
+    },
+    {
+      prop: "disabled",
+      type: "boolean",
+      default: "false",
+      description: "Disables the input and prevents interaction.",
+    },
+  ],
   name: "Input",
   description:
     "A text input component with label, hint, error, and icon support.",

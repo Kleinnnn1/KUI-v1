@@ -2,6 +2,43 @@ import { ModalPreview } from "./previews/ModalPreview";
 import type { ComponentEntry } from "./types";
 
 export const modalRegistry: ComponentEntry = {
+  props: [
+    {
+      prop: "open",
+      type: "boolean",
+      required: true,
+      description: "Controls whether the modal is visible.",
+    },
+    {
+      prop: "onClose",
+      type: "() => void",
+      required: true,
+      description: "Callback fired when the modal is closed.",
+    },
+    {
+      prop: "size",
+      type: "sm | md | lg | xl | full",
+      default: "md",
+      description: "Controls the max width of the modal.",
+    },
+    {
+      prop: "closeOnBackdrop",
+      type: "boolean",
+      default: "true",
+      description: "Whether clicking the backdrop closes the modal.",
+    },
+    {
+      prop: "className",
+      type: "string",
+      description: "Additional CSS classes to apply.",
+    },
+    {
+      prop: "children",
+      type: "ReactNode",
+      required: true,
+      description: "Content rendered inside the modal.",
+    },
+  ],
   name: "Modal",
   description:
     "A dialog component with backdrop, keyboard support, and composable sub-components.",
