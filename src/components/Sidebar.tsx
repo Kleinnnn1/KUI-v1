@@ -15,6 +15,7 @@ const components = [
   { name: "Modal", slug: "modal" },
   { name: "Avatar", slug: "avatar" },
   { name: "Dropdown", slug: "dropdown" },
+  { name: "Tabs", slug: "tabs" },
 ];
 
 export const Sidebar = () => {

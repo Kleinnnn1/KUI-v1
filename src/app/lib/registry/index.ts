@@ -5,8 +5,9 @@ import { inputRegistry } from "./input.registry";
 import { toastRegistry } from "./toast.registry";
 import { modalRegistry } from "./modal.registry";
 import { avatarRegistry } from "./avatar.registry";
-import type { ComponentEntry } from "./types";
 import { dropdownRegistry } from "./dropdown.registry";
+import { tabsRegistry } from "./tabs.registry";
+import type { ComponentEntry } from "./types";
 
 export const registry: Record<string, ComponentEntry> = {
   button: buttonRegistry,
@@ -17,6 +18,7 @@ export const registry: Record<string, ComponentEntry> = {
   modal: modalRegistry,
   avatar: avatarRegistry,
   dropdown: dropdownRegistry,
+  tabs: tabsRegistry,
 };
 
 export type { ComponentEntry };
