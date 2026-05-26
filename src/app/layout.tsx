@@ -20,6 +20,9 @@ export const metadata: Metadata = {
   },
   description:
     "A minimal dark component library built with React, TypeScript, and Tailwind. Copy. Paste. Ship.",
+  icons: {
+    icon: "/kui-logo.svg",
+  },
 };
 
 export default function RootLayout({
