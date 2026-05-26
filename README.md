@@ -179,19 +179,6 @@ The docs site will be available at `http://localhost:3000`.
 npm run build
 ```
 
-## Roadmap
-
-- [ ] Modal component
-- [ ] Tooltip component
-- [ ] Dropdown component
-- [ ] Toast notifications
-- [ ] Avatar component
-- [ ] Tabs component
-- [ ] Syntax highlighting with Shiki
-- [ ] Props reference table per component
-- [ ] Dark / light theme toggle
-- [ ] npm package (`@kleinnnn/kui`)
-
 ## Author
 
 Kenneth Jhun N. Balino
@@ -199,3 +186,7 @@ Kenneth Jhun N. Balino
 Full Stack Developer
 
 Built with Next.js, TypeScript, and Tailwind CSS.
+
+## License
+
+MIT © Kenneth Jhun N. Balino
