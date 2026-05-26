@@ -43,7 +43,7 @@ export const tabsRegistry: ComponentEntry = {
   preview: <TabsPreview />,
   code: `"use client";
 
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/kui/Tabs";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@kennbalino/kui";
 import { User, Settings } from "lucide-react";
 
 export default function MyComponent() {

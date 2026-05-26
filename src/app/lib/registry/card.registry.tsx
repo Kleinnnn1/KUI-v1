@@ -1,12 +1,12 @@
-import { Button } from "@/kui/Button";
-import { Badge } from "@/kui/Badge";
+import { Button } from "@kennbalino/kui";
+import { Badge } from "@kennbalino/kui";
 import {
   Card,
   CardHeader,
   CardTitle,
   CardDescription,
   CardFooter,
-} from "@/kui/Card";
+} from "@kennbalino/kui";
 import type { ComponentEntry } from "./types";
 
 export const cardRegistry: ComponentEntry = {
@@ -83,7 +83,7 @@ export const cardRegistry: ComponentEntry = {
       </Card>
     </div>
   ),
-  code: `import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/kui/Card";
+  code: `import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@kennbalino/kui";
 
 <Card>
   <CardHeader>

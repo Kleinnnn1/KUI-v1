@@ -1,7 +1,7 @@
 "use client";
 
-import { Button } from "@/kui/Button";
-import { useToast } from "@/kui/Toast";
+import { Button } from "@kennbalino/kui";
+import { useToast } from "@kennbalino/kui";
 
 export const ToastPreview = () => {
   const { toast } = useToast();

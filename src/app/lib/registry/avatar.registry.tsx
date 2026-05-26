@@ -39,7 +39,7 @@ export const avatarRegistry: ComponentEntry = {
   description:
     "A user avatar component with image, fallback initials, icon, status dot, and group support.",
   preview: <AvatarPreview />,
-  code: `import { Avatar, AvatarGroup } from "@/kui/Avatar";
+  code: `import { Avatar, AvatarGroup } from "@kennbalino/kui";
 
 // Image
 <Avatar src="/photo.jpg" alt="Klein" />

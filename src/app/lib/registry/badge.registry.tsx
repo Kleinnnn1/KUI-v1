@@ -1,4 +1,4 @@
-import { Badge } from "@/kui/Badge";
+import { Badge } from "@kennbalino/kui";
 import type { ComponentEntry } from "./types";
 
 export const badgeRegistry: ComponentEntry = {
@@ -39,7 +39,7 @@ export const badgeRegistry: ComponentEntry = {
       <Badge variant="muted">Muted</Badge>
     </div>
   ),
-  code: `import { Badge } from "@/kui/Badge";
+  code: `import { Badge } from "@kennbalino/kui";
 
 // Variants
 <Badge variant="default">Default</Badge>

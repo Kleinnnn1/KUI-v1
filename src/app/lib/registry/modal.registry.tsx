@@ -46,7 +46,7 @@ export const modalRegistry: ComponentEntry = {
   code: `"use client";
 
 import { useState } from "react";
-import { Button } from "@/kui/Button";
+import { Button } from "@kennbalino/kui";
 import {
   Modal,
   ModalHeader,
@@ -54,7 +54,7 @@ import {
   ModalDescription,
   ModalContent,
   ModalFooter,
-} from "@/kui/Modal";
+} from "@kennbalino/kui";
 
 export default function MyComponent() {
   const [open, setOpen] = useState(false);

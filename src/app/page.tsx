@@ -2,10 +2,10 @@ import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Search } from "lucide-react";
 import { Navbar } from "@/components/Navbar";
-import { Button } from "@/kui/Button";
-import { Badge } from "@/kui/Badge";
-import { Card } from "@/kui/Card";
-import { Input } from "@/kui/Input";
+import { Button } from "@kennbalino/kui";
+import { Badge } from "@kennbalino/kui";
+import { Card } from "@kennbalino/kui";
+import { Input } from "@kennbalino/kui";
 import { GithubIcon } from "@/components/icons/GithubIcon";
 import { Metadata } from "next";
 

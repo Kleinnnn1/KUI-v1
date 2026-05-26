@@ -1,7 +1,7 @@
 "use client";
 
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/kui/Tabs";
-import { Card, CardHeader, CardTitle, CardDescription } from "@/kui/Card";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@kennbalino/kui";
+import { Card, CardHeader, CardTitle, CardDescription } from "@kennbalino/kui";
 import { User, Settings, Bell } from "lucide-react";
 
 export const TabsPreview = () => {

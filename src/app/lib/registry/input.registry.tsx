@@ -1,4 +1,4 @@
-import { Input } from "@/kui/Input";
+import { Input } from "@kennbalino/kui";
 import { Search } from "lucide-react";
 import type { ComponentEntry } from "./types";
 
@@ -73,7 +73,7 @@ export const inputRegistry: ComponentEntry = {
       <Input placeholder="Disabled input" disabled />
     </div>
   ),
-  code: `import { Input } from "@/kui/Input";
+  code: `import { Input } from "@kennbalino/kui";
 import { Search } from "lucide-react";
 
 // Default

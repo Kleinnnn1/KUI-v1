@@ -1,4 +1,4 @@
-import { Button } from "@/kui/Button";
+import { Button } from "@kennbalino/kui";
 import type { ComponentEntry } from "./types";
 
 export const buttonRegistry: ComponentEntry = {
@@ -57,7 +57,7 @@ export const buttonRegistry: ComponentEntry = {
       <Button disabled>Disabled</Button>
     </div>
   ),
-  code: `import { Button } from "@/kui/Button";
+  code: `import { Button } from "@kennbalino/kui";
 
 // Variants
 <Button variant="solid">Solid</Button>

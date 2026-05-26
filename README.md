@@ -57,7 +57,7 @@ export function cn(...inputs: ClassValue[]) {
 ### Button
 
 ```tsx
-import { Button } from "@/kui/Button";
+import { Button } from "@kennbalino/kui";
 
 // Variants
 <Button variant="solid">Solid</Button>
@@ -77,7 +77,7 @@ import { Button } from "@/kui/Button";
 ### Badge
 
 ```tsx
-import { Badge } from "@/kui/Badge";
+import { Badge } from "@kennbalino/kui";
 
 <Badge variant="default">Default</Badge>
 <Badge variant="success">Success</Badge>
@@ -96,7 +96,7 @@ import {
   CardDescription,
   CardContent,
   CardFooter
-} from "@/kui/Card";
+} from "@kennbalino/kui";
 
 <Card variant="elevated" hoverable>
   <CardHeader>
@@ -116,7 +116,7 @@ import {
 ### Input
 
 ```tsx
-import { Input } from "@/kui/Input";
+import { Input } from "@kennbalino/kui";
 import { Search } from "lucide-react";
 
 // Default

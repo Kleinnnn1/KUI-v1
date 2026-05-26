@@ -1,6 +1,6 @@
 "use client";
 
-import { Avatar, AvatarGroup } from "@/kui/Avatar";
+import { Avatar, AvatarGroup } from "@kennbalino/kui";
 import avatarImage from "@/assets/sukuna.jpg";
 
 export const AvatarPreview = () => {

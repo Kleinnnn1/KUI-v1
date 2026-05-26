@@ -7,8 +7,8 @@ import {
   DropdownItem,
   DropdownSeparator,
   DropdownLabel,
-} from "@/kui/Dropdown";
-import { Button } from "@/kui/Button";
+} from "@kennbalino/kui";
+import { Button } from "@kennbalino/kui";
 import { User, Settings, Bell, LogOut } from "lucide-react";
 
 export const DropdownPreview = () => {

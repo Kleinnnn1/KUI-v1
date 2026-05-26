@@ -35,7 +35,7 @@ export const toastRegistry: ComponentEntry = {
     "A toast notification system with context, portal rendering, and multiple variants.",
   preview: <ToastPreview />,
   code: `// 1. Wrap your app with ToastProvider in layout.tsx
-import { ToastProvider } from "@/kui/Toast";
+import { ToastProvider } from "@kennbalino/kui";
 
 export default function RootLayout({ children }) {
   return (
@@ -49,8 +49,8 @@ export default function RootLayout({ children }) {
 
 // 2. Use the hook anywhere in your app
 "use client";
-import { useToast } from "@/kui/Toast";
-import { Button } from "@/kui/Button";
+import { useToast } from "@kennbalino/kui";
+import { Button } from "@kennbalino/kui";
 
 export default function MyComponent() {
   const { toast } = useToast();

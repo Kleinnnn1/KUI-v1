@@ -45,8 +45,8 @@ import {
   DropdownItem,
   DropdownSeparator,
   DropdownLabel,
-} from "@/kui/Dropdown";
-import { Button } from "@/kui/Button";
+} from "@kennbalino/kui";
+import { Button } from "@kennbalino/kui";
 import { User, Settings, LogOut } from "lucide-react";
 
 export default function MyComponent() {
