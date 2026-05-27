@@ -7,6 +7,7 @@ import {
   CardDescription,
   CardFooter,
 } from "@kennbalino/kui";
+import { Bell } from "lucide-react";
 import type { ComponentEntry } from "./types";
 
 export const cardRegistry: ComponentEntry = {
@@ -50,9 +51,9 @@ export const cardRegistry: ComponentEntry = {
   description:
     "A container component with header, content, and footer sub-components.",
   preview: (
-    <div className="flex flex-wrap gap-4 items-start justify-center w-full">
-      <Card className="w-72">
-        <CardHeader>
+    <div className="flex flex-wrap gap-4 items-stretch justify-center w-full">
+      <Card className="w-72 flex flex-col">
+        <CardHeader className="flex-1">
           <CardTitle>Default Card</CardTitle>
           <CardDescription>
             This is a default card with muted description text.
@@ -65,20 +66,26 @@ export const cardRegistry: ComponentEntry = {
           <Button size="sm">Confirm</Button>
         </CardFooter>
       </Card>
-      <Card variant="elevated" hoverable className="w-72">
-        <CardHeader>
-          <CardTitle>Elevated Card</CardTitle>
+      <Card variant="elevated" hoverable className="w-72 flex flex-col">
+        <CardHeader className="flex-1">
+          <div className="flex items-center gap-2">
+            <CardTitle>Elevated Card</CardTitle>
+            <Badge
+              variant="default"
+              className="rounded-full border-0 bg-blue-500/20 text-blue-400 flex items-center gap-1.5"
+            >
+              <Bell size={10} />3 New
+            </Badge>
+          </div>
           <CardDescription>
             Hover over this card to see the outline border effect.
           </CardDescription>
         </CardHeader>
         <CardFooter>
-          <Button size="sm" variant="danger">
-            Delete
+          <Button size="sm" variant="ghost">
+            Dismiss
           </Button>
-          <Badge variant="success" className="w-fit">
-            Active
-          </Badge>
+          <Button size="sm">View All</Button>
         </CardFooter>
       </Card>
     </div>

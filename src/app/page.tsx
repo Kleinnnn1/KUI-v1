@@ -136,11 +136,13 @@ export default function Home() {
                   placeholder="Search components..."
                   leftIcon={<Search size={13} />}
                   size="sm"
+                  className="placeholder:text-gray-400"
                 />
                 <Input
                   placeholder="you@example.com"
                   size="sm"
                   error="Invalid email address."
+                  className="placeholder:text-red-400/50"
                 />
               </div>
 
