@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: {
     template: "%s - KUI",
-    default: "KUI - Minimal Dark Component Library",
+    default: "KUI - Minimal Dark/Light Component Library",
   },
 };
 

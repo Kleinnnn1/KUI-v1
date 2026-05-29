@@ -14,16 +14,16 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "KUI — Minimal Dark React Component Library",
+  title: "KUI — Minimal Dark/Light React Component Library",
   verification: {
     google: "OPy9HJG3RVh5T7l85XYEaT3kyzlIyl04YUr4glwr0go",
   },
   description:
-    "A minimal, dark-first React component library built with TypeScript and Tailwind CSS.",
+    "A minimal, dark/light React component library built with TypeScript and Tailwind CSS.",
   openGraph: {
-    title: "KUI — Minimal Dark React Component Library",
+    title: "KUI — Minimal Dark/Light React Component Library",
     description:
-      "A minimal, dark-first React component library built with TypeScript and Tailwind CSS.",
+      "A minimal, dark/light React component library built with TypeScript and Tailwind CSS.",
     url: "https://kui-v1.vercel.app",
     siteName: "KUI",
     images: [
@@ -37,9 +37,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "KUI — Minimal Dark React Component Library",
+    title: "KUI — Minimal Dark/Light React Component Library",
     description:
-      "A minimal, dark-first React component library built with TypeScript and Tailwind CSS.",
+      "A minimal, dark/light React component library built with TypeScript and Tailwind CSS.",
     images: ["https://kui-v1.vercel.app/og-image.png"],
   },
   icons: {

@@ -29,7 +29,7 @@ export const ModalPreview = () => {
           <ModalHeader onClose={() => setOpen(false)}>
             <ModalTitle>Welcome to KUI</ModalTitle>
             <ModalDescription>
-              A minimal dark component library.
+              A minimal dark/light component library.
             </ModalDescription>
           </ModalHeader>
           <ModalContent>
